@@ -23,6 +23,7 @@ public:
     std::vector<int> freeLawyers; //freeLawyers are to be pushed in sorted, ascending order!!!
     std::vector<BreakLimit> limits; //also sorted, ascending order
     Node *parent, *left, *right;
+    int balance = 0;
 
     Node(int h) : hour(h) {
         parent = nullptr;
